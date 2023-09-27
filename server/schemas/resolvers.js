@@ -5,7 +5,7 @@ const resolvers = {
   Query: {
     me: async (parent, args, context) => {
       return User.find({ _id: context.user._id });
-    },
+    }
   },
 
   Mutation: {
